@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.m-b15 {
+  margin-bottom: 15px;
+}
+
+.red {
+  color: #ff0000;
+}
+
+.blue {
+  color: #40a9ff;
+}
+
+.white {
+  color: #ffffff;
+}
