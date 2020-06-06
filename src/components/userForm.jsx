@@ -14,7 +14,7 @@ class UserForm extends Component {
           value={name}
           onChange={onChange}
         />
-        Email
+        <span className={"red"}>*</span>Email
         <Input
           placeholder="Email"
           name="email"

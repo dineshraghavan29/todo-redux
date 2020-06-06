@@ -14,6 +14,15 @@ class GenericModal extends Component {
   }
 
   async handleOk() {
+    //Temporary validation
+    if (this.props.data.dateAdded === "") {
+      alert("Please enter date");
+      return;
+    }
+    if (this.props.data.email === "") {
+      alert("Please enter email");
+      return;
+    }
     this.setState({ loading: true });
     async function wait(duration = 1000) {
       await new Promise((resolve) => setTimeout(resolve, duration));
