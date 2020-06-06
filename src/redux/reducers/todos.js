@@ -1,8 +1,7 @@
 import { ADD_TODO, UPDATE_TODO, DELETE_TODO } from "../actionTypes";
-import { getTodos } from "../../services/fakeTodoService";
 
 const initialState = {
-  todos: getTodos(),
+  todos: [],
   module: "Todo",
   data: {
     action: "",

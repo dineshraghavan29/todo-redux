@@ -1,8 +1,7 @@
 import { ADD_USER, UPDATE_USER, DELETE_USER } from "../actionTypes";
-import { getUsers } from "../../services/fakeUserService";
 
 const initialState = {
-  users: getUsers(),
+  users: [],
   module: "User",
   data: {
     name: "",

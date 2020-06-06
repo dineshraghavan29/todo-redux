@@ -98,14 +98,12 @@ class Todos extends Component {
     return (
       <React.Fragment>
         <Row>
-          <Col span="2">
-            <Button className="m-b15" onClick={this.handleCreate}>
+          <Col span="24">
+            <Button className="align-left m-b15" onClick={this.handleCreate}>
               Add Todo
             </Button>
           </Col>
-          <Col span="22"></Col>
         </Row>
-
         <Table dataSource={this.props.todos} columns={this.columns} />
         <GenericModal
           visible={this.state.visible}

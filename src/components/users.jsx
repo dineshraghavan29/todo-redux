@@ -83,12 +83,11 @@ class Users extends Component {
     return (
       <React.Fragment>
         <Row>
-          <Col span="2">
-            <Button className="m-b15" onClick={this.handleCreate}>
+          <Col span="24">
+            <Button className="align-left m-b15" onClick={this.handleCreate}>
               Create User
             </Button>
           </Col>
-          <Col span="22"></Col>
         </Row>
         <Table dataSource={this.props.users} columns={this.columns} />
         <GenericModal
