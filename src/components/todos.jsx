@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { Button, Table, Space, Row, Col } from "antd";
+import { Table, Space, Row, Col } from "antd";
 import GenericModal from "./common/genericModal";
 import { addTodo, updateTodo, deleteTodo } from "../redux/actions";
+import GenericButton from "./common/genericButton";
 
 class Todos extends Component {
   state = {
@@ -99,9 +100,7 @@ class Todos extends Component {
       <React.Fragment>
         <Row>
           <Col span="24">
-            <Button className="align-left m-b15" onClick={this.handleCreate}>
-              Add Todo
-            </Button>
+            <GenericButton label="Add Todo" onClick={this.handleCreate} />
           </Col>
         </Row>
         <Table dataSource={this.props.todos} columns={this.columns} />

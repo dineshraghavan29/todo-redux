@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { Button, Table, Space, Row, Col } from "antd";
+import { Table, Space, Row, Col } from "antd";
 import GenericModal from "./common/genericModal";
+import GenericButton from "./common/genericButton";
 import { addUser, updateUser, deleteUser } from "./../redux/actions";
 
 class Users extends Component {
@@ -84,9 +85,7 @@ class Users extends Component {
       <React.Fragment>
         <Row>
           <Col span="24">
-            <Button className="align-left m-b15" onClick={this.handleCreate}>
-              Create User
-            </Button>
+            <GenericButton label="Create User" onClick={this.handleCreate} />
           </Col>
         </Row>
         <Table dataSource={this.props.users} columns={this.columns} />
